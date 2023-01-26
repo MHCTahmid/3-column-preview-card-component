@@ -1,0 +1,220 @@
+<style>@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+</style><style>@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+</style>* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--transparent_white);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body h1 {
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+:root {
+    --transparent_white: hsla(0, 0%, 100%, 0.75);
+    --very_light_gray: hsl(0, 0%, 95%);
+    --bright_orange: hsl(31, 77%, 52%);
+    --dark_cyan: hsl(184, 100%, 22%);
+    --very_dark_cyan: hsl(179, 100%, 13%);
+}
+
+
+
+/****** Main Style ********/
+
+
+main {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    width: 70vw;
+    height: 65vh;
+}
+
+/****** Box Style ********/
+
+.box-1 h1 {
+    font-size: 2.5em;
+    margin: 1em 0;
+    color: var(--very_light_gray);
+}
+
+.box-1 p {
+    color: var(--transparent_white);
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 500;
+    margin-bottom: 4em;
+}
+
+.box-2 p {
+    color: var(--transparent_white);
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 500;
+    margin-bottom: 4em;
+}
+
+.box-3 p {
+    color: var(--transparent_white);
+    font-size: 1.2em;
+    line-height: 2em;
+    font-weight: 500;
+    margin-bottom: 4em;
+}
+
+
+.box-1 {
+    background-color: var(--bright_orange);
+    padding: 4em;
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.box-2 {
+    padding: 4em;
+    background-color: var(--dark_cyan);
+}
+
+.box-3 {
+    background-color: var(--very_dark_cyan);
+    padding: 4em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+
+.box-2 h1 {
+    font-size: 2.5em;
+    margin: 1em 0;
+    color: var(--very_light_gray);
+}
+
+.box-3 h1 {
+    color: var(--very_light_gray);
+    font-size: 2.5em;
+    margin: 1em 0;
+}
+
+
+
+/****** Button *****/
+
+.button-1,
+.button-2,
+.button-3 {
+    text-decoration: none;
+    background-color: var(--very_light_gray);
+    font-size: auto;
+    padding: 1em 2em;
+    border-radius: 1.5em;
+}
+
+.button-1 {
+    color: var(--bright_orange);
+}
+
+.button-2 {
+    color: var(--dark_cyan);
+}
+
+.button-3 {
+    color: var(--very_dark_cyan);
+}
+
+.button-1:hover {
+    background-color: var(--bright_orange);
+    color: var(--very_light_gray);
+    border: 2px solid var(--very_light_gray);
+}
+
+.button-2:hover {
+    background-color: var(--dark_cyan);
+    color: var(--very_light_gray);
+    border: 2px solid var(--very_light_gray);
+}
+
+.button-3:hover {
+    background-color: var(--very_dark_cyan);
+    color: var(--very_light_gray);
+    border: 2px solid var(--very_light_gray);
+}
+
+/***** Media Query *****/
+
+@media only screen and (max-width: 375px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
+
+    .box-1 {
+        padding: 2.1em;
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 1em;
+    }
+
+    .box-1 p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        font-weight: 500;
+        margin-bottom: 3.5em;
+    }
+
+    .box-1 h1 {
+        font-size: 2em;
+    }
+
+    .box-2 {
+        padding: 2.1em;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+
+    .box-2 p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        font-weight: 500;
+        margin-bottom: 3.5em;
+    }
+
+    .box-2 h1 {
+        font-size: 2em;
+    }
+
+    .box-3 {
+        padding: 2.1em;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border-top-right-radius: 0;
+    }
+
+    .box-3 p {
+        font-size: 1.2em;
+        line-height: 1.5em;
+        font-weight: 500;
+        margin-bottom: 3.5em;
+    }
+
+    .box-3 h1 {
+        font-size: 2em;
+    }
+
+
+
+}
